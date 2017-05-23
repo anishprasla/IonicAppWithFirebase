@@ -1,0 +1,10 @@
+page-device-manager {
+  .license-list {}
+  @media (max-width: 567px) {
+    .license-list {
+      h1 {
+        font-size: 18px;
+      }
+    }
+  }
+}

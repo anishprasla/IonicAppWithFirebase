@@ -1,0 +1,157 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title >
+      <h2>Mobile App Licensing Service (MALS) </h2>
+    </ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only (click)="goToProfile()">
+        <ion-icon name="person"></ion-icon>
+        </button>
+    </ion-buttons>
+  </ion-navbar>
+  <!--<ion-navbar>
+    <ion-title>
+      <h2>Mobile App Licensing Service (MALS) </h2>
+    </ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only (click)="goToProfile()">
+        <ion-icon name="person"></ion-icon>
+        </button>
+    </ion-buttons>
+  </ion-navbar>-->
+</ion-header>
+<ion-content padding class="card-background-page cards-bg" style="background: #e3e6e6;">
+  <!--<button ion-button block color="primary" (click)="goToCreate()">
+    Create a new Event
+  </button>
+
+  <button ion-button block color="primary" (click)="goToList()">
+    See your events
+  </button>-->
+  <ion-grid>
+    <ion-row >
+      <ion-col width-33>
+        <ion-card text-center (click)=" goToLibrary()" style="background-color: cornflowerblue; color:white;">
+          <div class="card-title">
+            <ion-icon name="download"></ion-icon>
+          </div>
+          <div class="card-subtitle">Download Library</div>
+        </ion-card>
+      </ion-col>
+      <ion-col width-33>
+        <ion-card text-center (click)=" goToDashboard()" style="background-color: #f3865e; color:white;">
+          <div class="card-title">
+            <ion-icon name="pulse"></ion-icon>
+          </div>
+          <div class="card-subtitle">Dashboard</div>
+        </ion-card>
+      </ion-col>
+      <ion-col width-33>
+        <ion-card (click)="goToDeviceList()" style="background-color: darkseagreen; color:white;">
+          <div class="card-title">
+            <ion-icon name="lock"></ion-icon>
+          </div>
+          <div class="card-subtitle">Manage Licenses</div>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <ion-grid style="padding: 12px 5px;background: white;">
+    <ion-row responsive-sm>
+      <ion-col width-100 class="centerize" text-center text-wrap>
+        <div class="font-30 centerize" style="line-height: 25px;">
+          MALS Automates and Simplifies Mobile App Licensing </div>
+        
+        <ion-grid>
+          <ion-row responsive-sm>
+            <ion-col width-100 class="centerize" text-center text-wrap>
+              <div class="centerize font-20 font-20-title">
+          One platform to quick add mobile license security to any android apps
+        </div>
+              <div class="font-50 blue-text light centerize">
+                Makes mobile license integration easier for
+              </div>
+            </ion-col>
+          </ion-row>
+          <ion-row responsive-sm>
+            <ion-col width-100 class="centerize download-background-page" text-center text-wrap>
+              <ion-row>
+                <ion-col width-33 text-center>
+                  <ion-card text-center style="background-color: #d1e2f3;">
+                    <div class="card-title">
+                      Enterprise Mobility Professionals
+                    </div>
+                  </ion-card>
+                </ion-col>
+                <ion-col width-33 text-center text-wrap>
+                  <ion-card text-center style="background-color: #d1e2f3;">
+                    <div class="card-title">
+                      Mobile App Developers
+                    </div>
+                  </ion-card>
+                </ion-col>
+                <ion-col width-33 text-center text-wrap>
+                  <ion-card text-center style="background-color: #d1e2f3;">
+                    <div class="card-title">
+                      Mobile Solution Vendors
+                    </div>
+                  </ion-card>
+                </ion-col>
+              </ion-row>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+        <div class="centerize font-40 ">
+          Customers can use MALS library with all their apps </div>
+      </ion-col>
+    </ion-row>
+    <ion-row responsive-sm>
+      <ion-col width-22>
+        <div class="table">
+          <div style="width:50px" class="table-cell">
+            <ion-icon name="analytics" class="iconx"></ion-icon>
+          </div>
+          <div class="table-cell">
+            <div class="font-20">Accelerates deployment and sales cycles</div>
+          </div>
+        </div>
+      </ion-col>
+      <ion-col width-22>
+        <div class="table">
+          <div style="width:50px" class="table-cell">
+            <ion-icon name="alarm" class="iconx"></ion-icon>
+          </div>
+          <div class="table-cell">
+            <div class="font-20">Implement full licensing service to apps in minutes</div>
+          </div>
+        </div>
+      </ion-col>
+      <ion-col width-22>
+        <div class="table">
+          <div style="width:50px" class="table-cell">
+            <ion-icon name="sync" class="iconx"></ion-icon>
+          </div>
+          <div class="table-cell">
+            <div class="font-20">Ease testing, implementation and upgrades </div>
+          </div>
+        </div>
+      </ion-col>
+      <ion-col width-22>
+        <div class="table">
+          <div style="width:50px" class="table-cell">
+            <ion-icon name="globe" class="iconx"></ion-icon>
+          </div>
+          <div class="table-cell">
+            <div class="font-20">Expand the reach of your mobile service to more apps</div>
+          </div>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <!--<button ion-button block color="primary" (click)=" goToLibrary()">
+    Download MAL library 
+  </button>
+  <button ion-button block color="primary" (click)="goToDeviceList()">
+    Registered Device List
+  </button>-->
+</ion-content>

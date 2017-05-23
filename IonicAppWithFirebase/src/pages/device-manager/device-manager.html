@@ -1,0 +1,43 @@
+<!--
+  Generated template for the DeviceManager page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar>
+    <ion-title>Manage Licenses</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content text-wrap padding>
+  <ion-searchbar (ionInput)="getItems($event)"></ion-searchbar>
+  <!--<ion-list>
+  <ion-item *ngFor="let device of deviceList">
+      <h2>{{device?.manufacturer}} {{device?.model}}</h2>
+      <p>Email: <strong>{{device?.email}}</strong></p>
+      <p>License Status: <strong>{{device?.status}}</strong> <button (click)="goToDeviceDetail(device.id,device.status)" ion-button small>Edit</button></p>
+      <p>Reported Stolen: <strong>{{device?.deviceStolen}}</strong> <button (click)="reportStolen(device.id,device.deviceStolen)" ion-button small>Edit</button></p>
+    </ion-item>
+</ion-list>-->
+  <!--<button ion-button block color="primary" (click)="addNewDeviceToList()">
+    Add New Device
+  </button>-->
+  <ion-list>
+    <ion-item-sliding class="list-box" class="license-list" *ngFor="let device of deviceList">
+      <ion-item (click)="goToDeviceDetail(device.id,device.status)">
+        <ion-icon name="logo-android" item-left style="font-size:3em;color:#97c03e;"></ion-icon>
+        <h1>{{device?.manufacturer}} {{device?.model}}</h1>
+        <h3>{{device?.email}}</h3>
+        <template [ngIf]="device.flag == false" item-right>
+          <ion-note item-right>{{device?.status}} </ion-note>
+        </template>
+        <template [ngIf]="device.flag == true" item-right>
+          <ion-note item-right>Reported Stolen </ion-note>
+        </template>
+      </ion-item>
+      <ion-item-options side="right">
+        <button ion-button color="danger" (click)="reportStolen(device.id,device.deviceStolen)">Report Stolen</button>
+      </ion-item-options>
+    </ion-item-sliding>
+  </ion-list>
+</ion-content>

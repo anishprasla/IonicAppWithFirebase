@@ -1,0 +1,59 @@
+page-download-library {
+.centerize {
+    text-align: center !important;
+}
+.font-25 {
+    font-size: 20px;
+    line-height: 35px;
+    display: block;
+}
+.font-40 {
+    font-size: 40px;
+    line-height: 50px;
+    display: block;
+}
+.font-15 {
+    font-size: 15px;
+    line-height: 20px;
+    display: block;
+}
+.font-60 {
+    font-size: 60px;
+    line-height: 70px;
+    display: block;
+}
+
+.download-background-page {
+    ion-card {
+      position: relative;
+      text-align: center;
+      width: 95%;
+      height: 70px;
+      
+    }
+    ion-card:hover {
+      text-decoration: underline;
+      cursor: pointer;
+      -webkit-box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.5);
+      -moz-box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.5);
+      box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.5);
+    }
+    .card-title {
+      position: absolute;
+      top: 30%;
+      font-size: 1.5em;
+      width: 100%;
+      font-weight: bold;
+      color: white;
+    }
+    .card-subtitle {
+      font-size: 1.0em;
+      position: absolute;
+      top: 60%;
+      width: 100%;
+      color: black;
+    }
+  }
+
+
+}

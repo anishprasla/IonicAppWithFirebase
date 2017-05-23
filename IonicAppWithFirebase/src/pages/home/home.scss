@@ -1,0 +1,146 @@
+page-home {
+  button {
+    margin-bottom: 32px;
+  }
+  .iconx {
+    font-size: 4.2em;
+    margin-left: 8px;
+  }
+  .blocks {
+    -webkit-box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.5);
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.5);
+    height: 20%;
+  }
+  .card-background-page {
+    ion-card {
+      position: relative;
+      text-align: center;
+      width: 95%;
+      height: 100px;
+    }
+    ion-card:hover {
+      text-decoration: underline;
+      cursor: pointer;
+      -webkit-box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.5);
+      -moz-box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.5);
+      box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.5);
+    }
+    .card-title {
+      position: absolute;
+      top: 15%;
+      font-size: 2.0em;
+      width: 100%;
+      font-weight: bold;
+      color: white;
+    }
+    .card-subtitle {
+      font-size: 1.3em;
+      position: absolute;
+      top: 50%;
+      width: 100%;
+      color: white;
+    }
+  }
+
+.centerize {
+    text-align: center !important;
+}
+.font-25 {
+    font-size: 25px;
+    line-height: 35px;
+    display: block;
+}
+.font-20 {
+    font-size: 20px;
+    line-height: 35px;
+    display: inline-block;
+    margin-left: 12px;
+}
+.font-40 {
+    font-size: 40px;
+    line-height: 50px;
+    display: block;
+    color:dimgray;
+}
+.font-50 {
+    font-size: 50px;
+    line-height: 50px;
+    display: block;
+}
+.font-15 {
+    font-size: 15px;
+    line-height: 20px;
+    display: block;
+}
+.font-60 {
+    font-size: 60px;
+    line-height: 70px;
+    display: block;
+}
+.font-30 {
+    font-size: 30px;
+    line-height: 40px;
+    display: block;
+}
+.download-background-page {
+    ion-card {
+      position: relative;
+      text-align: center;
+      width: 95%;
+      height: 70px;
+      
+    }
+    ion-card:hover {
+      text-decoration: underline;
+      cursor: pointer;
+      -webkit-box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.5);
+      -moz-box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.5);
+      box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.5);
+    }
+    .card-title {
+      position: absolute;
+      top: 30%;
+      font-size: 1.5em;
+      width: 100%;
+      font-weight: bold;
+      color: #48575f;
+    }
+    .card-subtitle {
+      font-size: 1.3em;
+      position: absolute;
+      top: 60%;
+      width: 100%;
+      color: #48575f;
+    }
+  }
+.blue-text {
+    color: #29b6f6 !important;
+}
+.table {display: table;border: 1px solid #ccc;background: whitesmoke;}
+.table-cell {display: table-cell}
+
+@media (max-width: 567px) {
+  
+   .font-50 {
+    font-size: 27px;
+    line-height: 35px;
+    display: block;
+}
+ .font-20-title {
+  visibility: hidden;
+  display: none;
+}
+ .centerize {
+    text-align: center!important;
+}
+ .font-30{
+   font-size: 17px;
+   line-height: 20px;
+ }
+ .font-40 {
+    font-size: 27px;
+    line-height: 35px;
+ }
+}
+}
